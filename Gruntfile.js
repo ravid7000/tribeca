@@ -77,6 +77,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-browserify');
 
     var compile = ["ts", "copy", "browserify"];
-    grunt.registerTask("compile", compile);
-    grunt.registerTask("default", compile.concat(["watch"]));
+    grunt.registerTask("default", compile);
 };
